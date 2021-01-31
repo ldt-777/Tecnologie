@@ -141,7 +141,7 @@ public class addNoteClass extends BottomSheetDialogFragment {
     public void onDismiss(DialogInterface dialog) {
 
         Activity activity = getActivity();
-        if(activity instanceof DialogCloseListener){                                                /*controlla se l'activity (MainActivity) è un'istanza di DialogCloseListener
+        if(activity instanceof DialogCloseListener){                                                /*controlla se l'activity (MainActivity) contiene un'istanza di DialogCloseListener
                                                                                                     (contiene solo il metodo "CloseDialog()") */
             ((DialogCloseListener)activity).handleDialogClose(dialog);
 
